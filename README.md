@@ -8,3 +8,8 @@ Fist:
     + git add : thêm các file mới tạo vào trong hệ thống kho của git
     + git commit : đóng cho file vừa add 1 cái tem để xác định, phân loại
         git commit -m '...' : gắn thêm mô tả, tên tem để dễ hiểu
+    + git log : Show lịch sử commit
+    + git show : Show sự thay đổi trong từng commit
+        git show "mã commit"
+    + git diff : 
+    
