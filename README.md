@@ -12,11 +12,20 @@ Second: Câu lệnh
     + git add : thêm các file mới tạo vào trong hệ thống kho của git
     + git commit : đóng cho file vừa add 1 cái tem để xác định, phân loại
         git commit -m '...' : gắn thêm mô tả, tên tem để dễ hiểu
+    
     + git log : Show lịch sử commit
     + git show : Show sự thay đổi trong từng commit
         git show "mã commit"
     + git diff : xem thay đổi, trước khi add vào Staging area
-X-> + "git checkout -- fileNAme" or "git restore fileName" : xóa thay đổi
+
+X-> + "git checkout -- <file NAme>" or "git restore <file Name></fileName>" : xóa thay đổi
         recommend "git restore" giống "undo", không dùng thường xuyên
-    + "git reset [HEAD] fileName" or "git restore --staged fileName" : xóa file vừa add ra khỏi Staging area
-        recommend "git reset fileName"
+    + "git reset [HEAD] <file Name>" or "git restore --staged fileName : xóa file vừa add ra khỏi Staging area
+        recommend "git reset <file Name>"
+        
+    + git checkout --b <branch Name
+        
+        
+        
+        
+        
