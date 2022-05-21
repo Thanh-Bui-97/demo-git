@@ -1,0 +1,13 @@
+.list {
+    width: 700px;
+    height: 50px;
+    list-style-type: none;
+    background-color: beige;
+    color: cadetblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list li {
+    padding: 20px;
+}
