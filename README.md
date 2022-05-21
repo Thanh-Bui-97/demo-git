@@ -21,8 +21,8 @@ Second: Câu lệnh
 
     + "git checkout -- <file NAme>" or "git restore <file Name>" : xóa thay đổi
         > recommend "git restore" giống "undo", không dùng thường xuyên
-    + "git reset [HEAD] <file Name>" or "git restore --staged <file Name>" : xóa file vừa add ra khỏi Staging area
-RC->    > recommend "git reset <file Name>"
+RC->+ "git reset [HEAD] <file Name>" or "git restore --staged <file Name>" : xóa file vừa add ra khỏi Staging area
+    > recommend "git reset <file Name>"
     + "git reset --soft <commit ID>" : đưa commit được chỉ định và những commit sau đó về dạng staging area
     + "git reset --mixed <commit ID>" : đưa commit được chỉ định và những commit sau đó về dạng working directory
     + "git reset --hard <commit ID>" : xóa luôn commit được chỉ định và những commit sau đó
