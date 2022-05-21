@@ -6,6 +6,7 @@ Fist: Thuật ngữ
     + Working directory : Thư mục Project đang làm
     + Staging area : khu vực lưu trữ tạm thời các commit sau khi add
     + Git repository : Khu vực lưu trữ các commit đã đóng tem, gắn tên cho commit
+    
 Second: Câu lệnh
     + git init : Bất kỳ project nào cũng phải chạy git đầu tiên
     + git status : Giải thích trạng thái của các file trong project
@@ -15,17 +16,21 @@ Second: Câu lệnh
     
     + git log : Show lịch sử commit
     + git show : Show sự thay đổi trong từng commit
-        git show "mã commit"
+        git show "commit ID"
     + git diff : xem thay đổi, trước khi add vào Staging area
 
 X-> + "git checkout -- <file NAme>" or "git restore <file Name></fileName>" : xóa thay đổi
-        recommend "git restore" giống "undo", không dùng thường xuyên
-    + "git reset [HEAD] <file Name>" or "git restore --staged fileName : xóa file vừa add ra khỏi Staging area
-        recommend "git reset <file Name>"
-        
-    + git checkout --b <branch Name
-        
-        
+        > recommend "git restore" giống "undo", không dùng thường xuyên
+    + "git reset [HEAD] <file Name>" or "git restore --staged <file Name>" : xóa file vừa add ra khỏi Staging area
+        > recommend "git reset <file Name>"
+    + "git reset --soft <commit ID>" : unbox commit được chỉ định và những commit sau đó dưới dạng staging area
+    + "git reset --mixed <commit ID>" : unbox commit được chỉ định và những commit sau đó dưới dạng working directory
+X-> + "git reset --hard <commit ID>" : xóa luôn commit được chỉ định và những commit sau đó
+         
+    + git checkout --b <branch Name> : Tạo nhánh mới (bản chất là một project demo chức năng mới nhằm mục đích làm và test chức năng mới của project), ok thì nhập vào nhánh chính.
+    + git branch : kiểm tra các nhánh hiện có
+    + git merge : nhập nhánh bất kỳ vào nhánh hiện làm việc
+        "git merge <branch Name>
         
         
         

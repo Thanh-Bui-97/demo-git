@@ -9,5 +9,8 @@
     align-items: center;
 }
 .list li {
+    margin: 0 10px;
     padding: 20px;
+    background-color: burlywood;
+    border-radius: 7px;
 }
