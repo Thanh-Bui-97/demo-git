@@ -19,15 +19,16 @@ Second: Câu lệnh
         git show "commit ID"
     + git diff : xem thay đổi, trước khi add vào Staging area
 
-X-> + "git checkout -- <file NAme>" or "git restore <file Name></fileName>" : xóa thay đổi
+    + "git checkout -- <file NAme>" or "git restore <file Name>" : xóa thay đổi
         > recommend "git restore" giống "undo", không dùng thường xuyên
     + "git reset [HEAD] <file Name>" or "git restore --staged <file Name>" : xóa file vừa add ra khỏi Staging area
-        > recommend "git reset <file Name>"
-    + "git reset --soft <commit ID>" : unbox commit được chỉ định và những commit sau đó dưới dạng staging area
-    + "git reset --mixed <commit ID>" : unbox commit được chỉ định và những commit sau đó dưới dạng working directory
-X-> + "git reset --hard <commit ID>" : xóa luôn commit được chỉ định và những commit sau đó
-         
-    + git checkout --b <branch Name> : Tạo nhánh mới (bản chất là một project demo chức năng mới nhằm mục đích làm và test chức năng mới của project), ok thì nhập vào nhánh chính.
+RC->    > recommend "git reset <file Name>"
+    + "git reset --soft <commit ID>" : đưa commit được chỉ định và những commit sau đó về dạng staging area
+    + "git reset --mixed <commit ID>" : đưa commit được chỉ định và những commit sau đó về dạng working directory
+    + "git reset --hard <commit ID>" : xóa luôn commit được chỉ định và những commit sau đó
+    + "git revert <commit ID>" : tạo 1 commit mới có nội dung là xóa những thay đổi của commit được chỉ định (bản chất là xóa commit được chỉ định)  
+        
+RC->+ git checkout --b <branch Name> : Tạo nhánh mới (bản chất là một project demo chức năng mới nhằm mục đích làm và test chức năng mới của project), ok thì nhập vào nhánh chính.
     + git branch : kiểm tra các nhánh hiện có
     + git merge : nhập nhánh bất kỳ vào nhánh hiện làm việc
         "git merge <branch Name>
