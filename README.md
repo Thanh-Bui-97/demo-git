@@ -2,6 +2,7 @@ This project is just a demo and practice how to use Git for coding
 
 - Git được sử dụng để lưu lại  quá trình làm việc của 1 project
 - Cách sử dụng:
+
 Fist: Thuật ngữ
     + Working directory : Thư mục Project đang làm
     + Staging area : khu vực lưu trữ tạm thời các commit sau khi add
@@ -30,12 +31,19 @@ RC->+ "git reset [HEAD] <file Name>" or "git restore --staged <file Name>" : xo�
         
 RC->+ git checkout --b <branch Name> : Tạo nhánh mới (bản chất là một project demo chức năng mới nhằm mục đích làm và test chức năng mới của project), ok thì nhập vào nhánh chính.
     + git branch : kiểm tra các nhánh hiện có
+    + git checkout <branch Name> : chuyển đổi giữa các branch
     + git merge : nhập nhánh bất kỳ vào nhánh hiện làm việc
         "git merge <branch Name>
         
 Third: USE GITHUB (Đại loại là mạng xã hội cho coder)
     + git push : push all commit lên gitHub
-    + git clone : Download 1 project nào đó về máy.
-        + git pull : Sau khi download về máy thì pull (kéo về) / push (đẩy lển) các commit bình thường
+       > "git push origin <path>" : push lần đầu, 
+           > lần sau chỉ cần "git push"
+           > "git push origin <branch>" : push nhánh
+    + git clone <project path>: Download 1 project nào đó về máy.
+        + git pull : Sau khi download về máy thì pull (kéo về) / push (đẩy lển) tất cả commit bình thường
+        + git fetch <branch Name> : để pull nhánh về
+            >NOTE: -Khác nhau cơ bản giữa pull và fetch là: sau khi kéo 1 commit về thì pull sẽ merge các branch remote commit này với local commit, fetch thì không. 
+                    -Nên chỉ nên dùng Pull khi muốn đồng bộ dữ liệu trên gitHub xuống local
         
         
