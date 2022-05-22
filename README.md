@@ -33,5 +33,9 @@ RC->+ git checkout --b <branch Name> : Tạo nhánh mới (bản chất là m�
     + git merge : nhập nhánh bất kỳ vào nhánh hiện làm việc
         "git merge <branch Name>
         
+Third: USE GITHUB (Đại loại là mạng xã hội cho coder)
+    + git push : push all commit lên gitHub
+    + git clone : Download 1 project nào đó về máy.
+        + git pull : Sau khi download về máy thì pull (kéo về) / push (đẩy lển) các commit bình thường
         
         
