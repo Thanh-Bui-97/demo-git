@@ -38,8 +38,10 @@
         "git merge <branch Name>
         
 #### Third: USE GITHUB (Đại loại là mạng xã hội cho coder)
+    - First Steps: Creat new responsitory (góc trên phải màn hình)
+    - Second Steps: Copy your link gitHub where your project was saved, back to terminal "git remote add origin <path copied> "
     - git push : push all commit lên gitHub
-      - > "git push origin <path>" : push lần đầu, 
+      - > "git push -u origin master" : push lần đầu, 
            > lần sau chỉ cần "git push"
            > "git push origin <branch>" : push nhánh
     - git clone <project path>: Download 1 project nào đó về máy.
